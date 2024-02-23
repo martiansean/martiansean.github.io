@@ -27,18 +27,20 @@
                                 <li><a class="uk-text-large" id="logo" href="#">Sukhumvit House</a></li>
                             </ul>
                             <ul class="uk-navbar-nav uk-visible@s">
-                                <li><a class="link" href="#">Rooms</a></li>
-                                <li><a class="link" href="#">Facilities</a></li>
-                                <li><a class="link" href="#">Contact</a></li>
+                                <li><a class="link" href="#rooms" uk-scroll>Rooms</a></li>
+                                <li><a class="link" href="#facilities" uk-scroll>Facilities</a></li>
+                                <li><a class="link" href="#events" uk-scroll>Events</a></li>
+                                <li><a class="link" href="#contacts" uk-scroll>Contact</a></li>
                             </ul>
                         </div>
                         <div class="uk-navbar-right uk-hidden@s">
                             <a class="uk-navbar-toggle uk-navbar-toggle-animate" uk-navbar-toggle-icon href="#"></a>
                             <div class="uk-navbar-dropdown">
                                 <ul class="uk-nav uk-navbar-dropdown-nav">
-                                    <li><a class="link" href="#">Rooms</a></li>
-                                    <li><a class="link" href="#">Facilities</a></li>
-                                    <li><a class="link" href="#">Contact</a></li>
+                                    <li><a class="link" href="#rooms" uk-scroll>Rooms</a></li>
+                                    <li><a class="link" href="#facilities" uk-scroll>Facilities</a></li>
+                                    <li><a class="link" href="#events" uk-scroll>Events</a></li>
+                                    <li><a class="link" href="#contacts" uk-scroll>Contact</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -57,12 +59,12 @@
                     <h1>A VIBRANT SPACE <br>
                         WITHIN THE CITY</h1>
                     <br>
-                    <button class="uk-button uk-button-primary">Explore rooms</button>
+                    <a href="#rooms" uk-scroll><button class="uk-button uk-button-primary">Explore rooms</button></a>
                 </div>
             </div>
         </div>
     </section>
-    <section>
+    <section id="rooms">
         <div class="uk-container section">
             <h2>
                 Our rooms
@@ -122,7 +124,7 @@
             </ul>
         </div>
     </section>
-    <section>
+    <section id="facilities">
         <div class="uk-container section">
             <h2>
                 Our facilities
@@ -202,20 +204,105 @@
             </ul>
         </div>
     </section>
-    <div id="footer" class="uk-child-width-1-2@s uk-grid-collapse" uk-grid>
-        <div>
-            <div class="uk-tile">
-                <p><b>Address:</b> 19 Soi Sukhumvit 34, Khlong Tan, Khlong Toei, Bangkok 10110, Thailand</p>
-                <p><b>Email:</b> test@test.com</p>
-                <p><b>Tel:</b> 000-000-000</p>
+    <section id="events">
+        <div class="uk-container section">
+            <h2>
+                Our events
+            </h2>
+            <ul class="uk-subnav uk-subnav-pill" uk-switcher>
+                <li><a class="room_link" href="#">Loy Kratong</a></li>
+                <li><a class="room_link" href="#">New Years</a></li>
+                <li><a class="room_link" href="#">Annual Golf</a></li>
+            </ul>
+            <ul class="uk-switcher uk-margin">
+                <li>
+                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
+                        uk-slideshow="animation: push">
+
+                        <ul class="uk-slideshow-items">
+                            <li>
+                                <img src="https://www.mosaicswimmingpools.co.uk/wp-content/uploads/2020/12/msps-image-2-1024x663.jpg"
+                                    uk-cover>
+                            </li>
+                            <li>
+                                <img src="https://twmove.co.uk/wp-content/uploads/2023/02/IMG_6397-1024x682.jpg"
+                                    uk-cover>
+                            </li>
+                        </ul>
+
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous
+                            uk-slideshow-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next
+                            uk-slideshow-item="next"></a>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
+                        uk-slideshow="animation: push">
+
+                        <ul class="uk-slideshow-items">
+                            <li>
+                                <img src="https://spasearch.org/wp-content/uploads/2020/11/SS20-Graphics-1080x1080-Nov-Lifestyle-1080x770.jpg"
+                                    uk-cover>
+                            </li>
+                            <li>
+                                <img src="https://www.kzooparks.org/files/sharedassets/parks/v/2/park-images/verburg-park.jpg?dimension=pageimagefullwidth&w=1140"
+                                    uk-cover>
+                            </li>
+                        </ul>
+
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous
+                            uk-slideshow-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next
+                            uk-slideshow-item="next"></a>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
+                        uk-slideshow="animation: push">
+
+                        <ul class="uk-slideshow-items">
+                            <li>
+                                <img src="https://talkcondo.s3.ca-central-1.amazonaws.com/wp-content/uploads/2016/07/blue-diamong-at-imperial-village-living-room-1030x579-1030x579.jpg"
+                                    uk-cover>
+                            </li>
+                            <li>
+                                <img src="https://i0.wp.com/i.pinimg.com/originals/98/ed/06/98ed06c24cf5e703fe22298ef464ac1b.jpg?resize=160,120"
+                                    uk-cover>
+                            </li>
+                        </ul>
+
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous
+                            uk-slideshow-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next
+                            uk-slideshow-item="next"></a>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="contacts">
+        <div id="footer" class="uk-child-width-1-2@s uk-grid-collapse" uk-grid>
+            <div>
+                <div class="uk-tile">
+                    <p><b>Address:</b> 19 Soi Sukhumvit 34, Khlong Tan, Khlong Toei, Bangkok 10110, Thailand</p>
+                    <p><b>Email:</b> test@test.com</p>
+                    <p><b>Tel:</b> 000-000-000</p>
+                </div>
+            </div>
+            <div>
+                <div class="uk-tile">
+                    <iframe width="100%" height="100%"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15000.257490599673!2d100.566573035859!3d13.726226162010649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f4f06109bc1%3A0xc967b2967e488eb2!2z4Lia4LmJ4Liy4LiZ4Liq4Li44LiC4Li44Lih4Lin4Li04LiXMzQ!5e0!3m2!1sen!2suk!4v1708700321620!5m2!1sen!2suk"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </div>
-        <div>
-            <div class="uk-tile">
-                <iframe width="100%" height="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15000.257490599673!2d100.566573035859!3d13.726226162010649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f4f06109bc1%3A0xc967b2967e488eb2!2z4Lia4LmJ4Liy4LiZ4Liq4Li44LiC4Li44Lih4Lin4Li04LiXMzQ!5e0!3m2!1sen!2suk!4v1708700321620!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-    </div>
+    </section>
     </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.18.3/dist/js/uikit.min.js"></script>
